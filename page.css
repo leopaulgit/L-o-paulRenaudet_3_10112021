@@ -1,0 +1,150 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.logo img
+{
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    
+}
+
+#entré a, 
+#entré a:hover,
+#entré a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+#plats a,
+#plats a:hover,
+#plats a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+#desserts a,
+#desserts a:hover,
+#desserts a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+footer
+{
+    background-color:#4A4A4A;
+    text-decoration: white;
+    text-align: initial;
+}
+.legals a,
+.legals a:hover,
+.legals a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+.logo2 a img
+{
+   filter: invert(1);
+   height: 20px;
+   padding-left: 20px;
+   width: 100px;
+   padding-top: 30px;
+}
+button
+{
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: #FF79DA;
+    border-color: #FF79DA;
+    margin-left: 75px;
+}
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke ;
+    text-align: initial;
+    border: 1px whitesmoke none;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+    width: 98%;
+    gap: 20px;
+    position: relative;
+    top: -20px;
+}
+.entre
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    border-radius: 20px 20px 20px;
+    box-shadow: whitesmoke;
+    box-shadow: 10px 5px 5px whitesmoke
+    
+}
+.entre div 
+{
+    background-color: white;
+    border-radius: 20px 20px 20px;
+}
+.plat
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    
+}
+.plat div
+{
+    background-color: white;
+    border-radius: 20px 20px 20px;
+}
+.dessert
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    
+}
+.dessert div
+{
+    background-color: white;
+    border-radius: 20px 20px 20px;
+}
+#conteneur section div
+{   
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+.legal
+{
+    padding-bottom: 20px;
+}
+img 
+{
+    width: 100%;
+}
+#conteneur h2
+{
+    text-align: center;
+}
+h2
+{
+    font-family: 'Shrikhand';
+}
+h4
+{
+    text-decoration: underline rgb(99, 173, 99) 
+}

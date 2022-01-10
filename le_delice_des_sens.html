@@ -4,22 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/page.css"
+      media="screen and (max-width: 768px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9f5d0e9be1.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
 <body>  
-    <h1>Ohmyfood</h1>
+    <div class="logo">
+        <a href="*">
+            <img
+                src="./images/logo/ohmyfood.png"
+                width="150"
+                height="50"
+            alt="logo">
+         </a>
+    </div>
         <img 
-            src="Maquettes Ohmyfood (2)\Maquettes Ohmyfood\images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg"
-            alt="la note"/>
-    <h2>Le délice des sens</h2>
-    <h3>ENTRéES</h3>
-    <div id=conteneur>
+            src="/images/restaurants/le_delice.jpg"
+            alt="le delice" width="200" height="200"/>
+<div id=conteneur>
+    <h2>Le délice des sens<i class="far fa-heart"></i></h2>
+    <h4>ENTRÉES</h4>
+    
         <section id="entré">
             <div class="entre">
+                <div>
                 <a href="*">
                     <h3>Tartare de thon</h3>
                     Assaisonné au yuzu 25 € </br>
                 </a>
+            </div>
                 <div>
                     <a href="*">
                         <h3>Bouchée de homard croustillant</h3>
@@ -34,13 +59,15 @@
                 </div>
             </div>
         </section>
-        <h3>PLATS</h3>
+        <h4>PLATS</h4>
         <section id="plats">
             <div class="plat">
+                <div>
                 <a href="*">
                     <h3>Poulet rôti aux herbes de provence</h3>
                     Et sa crème de truffe 40€ </br>
                 </a>
+                </div>  
                 <div>
                     <a href="*">
                         <h3>Langouste rôtie</h3>
@@ -55,13 +82,15 @@
                 </div>
             </div>
         </section>
-        <h3>DESSERTS</h3>
-        <section id="Desserts">
+        <h4>DESSERTS</h4>
+        <section id="desserts">
             <div class="dessert">
+                <div>
                 <a href="*">
                     <h3>Farandole de desserts</h3>
                     Du chef 18€ </br>
                 </a>
+            </div>
                 <div>
                     <a href="*">
                         <h3>Crème brulée</h3>
@@ -76,14 +105,26 @@
                 </div>
             </div>
         </section>
-    </div>
+    
     <button><span>Commander</span></button>
+</div>
 </body>
 <footer>
+    <div class="logo2">
+        <a href="*">
+            <img
+                src="./images/logo/ohmyfood.png"
+                width="150"
+                height="50"
+            alt="logo">
+         </a>
+    </div>
+    <div class="legals">
     <ul>
-        <li><a href="*">Proposer un restaurant</a></li>
-        <li><a href="*">Devenir partenaire</a></li>
+        <li><i class="fas fa-utensils"></i><a href="*">Proposer un restaurant</a></li>
+        <li><i class="fas fa-hands-helping"></i><a href="*">Devenir partenaire</a></li>
         <li><a href="*">Mentions légales</a></li>
         <li><a href="*">Contact</a></li>
     </ul>
+</div>
 </footer>
