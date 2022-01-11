@@ -59,9 +59,14 @@ button
     width: 200px;
     height: 50px;
     margin-bottom: 50px;
-    background-color: #FF79DA;
-    border-color: #FF79DA;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border: none;
     margin-left: 75px;
+    color: honeydew;
+}
+button:hover
+{
+    opacity: 0.8;
 }
 #conteneur
 {
@@ -147,4 +152,25 @@ h2
 h4
 {
     text-decoration: underline rgb(99, 173, 99) 
+}
+i.fas.fa-utensils
+{
+    color: white;
+    margin-right: 18px;
+}
+i.fas.fa-hands-helping
+{
+    color: white;
+    margin-right: 10px;
+}
+i.far.fa-heart
+{
+    color: gray;
+    margin-left: 20px;
+    
+}
+i.fas.fa-chevron-left
+{
+    
+    color: rgb(41, 39, 39);
 }
