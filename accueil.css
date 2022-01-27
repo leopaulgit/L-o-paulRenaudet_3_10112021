@@ -3,6 +3,7 @@ body
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
 .logo img
 {
     text-align: center;
@@ -10,23 +11,42 @@ body
     height: 30px;
     
 }
+#restaurants .coeur
+{
+    padding-top: 20px;
+    text-align: right;
+}
+#restaurants p 
+{
+    margin-left: 10px;
+}
+
 #restaurants div a h2
 {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
-#restaurants div
+#restaurants .restaurant
 {
  border: 1px black none;
  border-radius: 20px 20px 20px;
  margin-bottom: 20px;
  background-color: white;
  width: 98%;
+ box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
 #restaurants img
 {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+#restaurants .content 
+{
+    display: flex;
+    justify-content: space-between;
 }
 #conteneur
 {
@@ -63,7 +83,7 @@ footer
 {
     background-color: #E6E6E6 ;
 }
-p 
+.recherche p 
 {
     color:gray;
 }
@@ -81,6 +101,7 @@ p
 .recherche button:hover
 {
     opacity: 0.8;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
 #restaurants a, 
 #restaurants a:hover,
@@ -102,6 +123,11 @@ p
     padding-left: 150px;
     padding-top: 10px;
 }
+.nav
+{
+    display: flex;
+    
+}
 .nav a,
 .nav a:hover,
 .nav a:visited
@@ -120,29 +146,80 @@ ul
 {
     list-style-type: none;
 }
-ol li
+.nav ul li
 {
     background-color: whitesmoke;
     border: white solid 1px;
     border-radius: 20px 20px 20px;
     padding: 15px;
     margin-bottom: 5px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    display: flex;
 
 }
-.nav ol li a 
+.nav ul li a 
 {
     font-weight: bold;
 }
- li::marker
+
+ul li span
 {
-    color:violet;
+    display:inline-block;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    border:#FF79DA solid 0px;
+    border-radius: 50%;
+    background: linear-gradient(#FF79DA,#9356DC);
+    margin-right: 5px;
+    color: white;
+    position:relative;
+    left: -25px;
+    
+}
+#restaurants .etiquette1
+{
+    border: rgb(154, 201, 154) solid 5px;
+    width: 65px;
+    border-radius: 2px;
+    color: green;
+    background-color: rgb(154, 201, 154);
+    position: relative;
+    top: 60px;
+    left: 250px;
+
+}
+#restaurants .etiquette2
+{
+    border: rgb(154, 201, 154) solid 5px;
+    width: 65px;
+    border-radius: 2px;
+    color: green;
+    background-color: rgb(154, 201, 154);
+    position: relative;
+    bottom:800px;
+    left: 250px;
 }
 .legal
 {
     padding-bottom: 20px;
 }
+.coeur:hover i.fas.fa-heart
+{
+    opacity: 1;
+    color: violet;
+    transition:opacity 1s;
+}
+i.fas.fa-heart
+{
+    position: relative;
+    right: 22px;
+    opacity: 0;
+    font-size: 22px;
+}
 i.far.fa-heart
 {
+    font-size: 22px;
     color: gray;
     
 }
@@ -170,4 +247,143 @@ i.fas.fa-hamburger
 {
     color: gray;
     margin-right: 30px;
+}
+@media screen and (min-width: 820px)
+ {
+    .logo a img
+     {
+        width: 25%;
+    }
+    .nav 
+    {
+        justify-content: center;
+    }
+    #restaurants img 
+    {
+        height: auto;
+    }
+    #restaurants .etiquette1
+    {
+        left:700px;
+    }
+    #restaurants .etiquette2
+    {
+        left:700px;
+        bottom: 2400px;
+    }
+    .local i.fas.fa-map-marker-alt 
+    {
+        padding-left: 350px;
+    }
+
+}
+@media  screen and (min-width: 1080px)
+ {
+    footer ul li 
+    {
+        margin: 15px;
+    }
+    footer ul 
+    {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    footer
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+    .logo a img 
+    {
+        width: 10%;
+    }
+    .local i.fas.fa-map-marker-alt 
+    {
+        padding-left: 1150px;
+    }
+    #restaurants img 
+    {
+        height: 600px;
+        object-fit: cover;
+    }
+    #restaurants 
+    {
+        display: flex;
+    }
+    #restaurants .restaurant 
+    {
+        width: 100%;
+        
+    }
+    #restaurants .etiquette1
+    {
+        height: 25px;
+        left: 500px;
+        top: 20px;
+    }
+    #restaurants .etiquette2
+    {
+        left: 500px;
+        height: 25px;
+        top:20px;
+    }
+}
+#loader
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    animation: loader 2s forwards 5s;
+    z-index: 9999;
+
+}
+#container
+{
+    width: 30vw;
+    height:30vw;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    animation: spinner 2s infinite;
+    
+}
+#content
+{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: white;
+
+}
+@keyframes loader 
+{
+        0% {
+            opacity: 1;
+        }
+        
+        100% {
+            opacity: 0;
+            z-index: -9999;
+            
+        }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
 }

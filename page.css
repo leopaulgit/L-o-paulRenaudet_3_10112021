@@ -3,6 +3,7 @@ body
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
 .logo img
 {
     text-align: center;
@@ -67,6 +68,7 @@ button
 button:hover
 {
     opacity: 0.8;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
 #conteneur
 {
@@ -82,51 +84,68 @@ button:hover
     gap: 20px;
     position: relative;
     top: -20px;
-}
-.entre
-{
-    display: flex;
-    flex-direction: column;
-    border: 2px white solid;
-    border-radius: 20px 20px 20px;
-    box-shadow: whitesmoke;
-    box-shadow: 10px 5px 5px whitesmoke
     
+    
+}
+
+a
+{
+    margin-left: 10px;
+}
+#conteneur div a p span
+{
+    font-weight: bold;
 }
 .entre div 
 {
     background-color: white;
     border-radius: 20px 20px 20px;
+    animation: slideup;
+    animation-duration: 3s;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
-.plat
-{
-    display: flex;
-    flex-direction: column;
-    border: 2px white solid;
-    
-}
+
 .plat div
 {
     background-color: white;
     border-radius: 20px 20px 20px;
+    animation: slideup;
+    animation-duration: 3s;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
-.dessert
+#conteneur p 
 {
-    display: flex;
-    flex-direction: column;
-    border: 2px white solid;
-    
+    display:flex;
+    justify-content: space-between;
 }
+
 .dessert div
 {
     background-color: white;
     border-radius: 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    animation: slideup;
+    animation-duration: 3s;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    
+}
+@keyframes slideup {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 #conteneur section div
 {   
     flex-direction: column;
     display: flex;
     gap: 20px;
+    
 }
 
 ul 
@@ -149,7 +168,7 @@ h2
 {
     font-family: 'Shrikhand';
 }
-h4
+h4 span
 {
     text-decoration: underline rgb(99, 173, 99) 
 }
@@ -173,4 +192,69 @@ i.fas.fa-chevron-left
 {
     
     color: rgb(41, 39, 39);
+    position: relative;
+    bottom: 10px;
+    right: 50px;
+}
+@media screen and (min-width: 820px)
+{
+    .logo a img 
+    {
+        width: 25%;
+    }
+    #conteneur button
+    {
+        margin: 0 auto;
+    }
+    img 
+    {
+        height: auto;
+    }
+}
+@media  screen and (min-width: 1080px)
+{
+    footer ul li 
+    {
+        margin: 15px;
+    }
+    body
+    {
+        margin: 0px;
+    }
+    footer ul 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+    img 
+    {
+        height: 800px;
+        object-fit: cover;
+    }
+    .logo a img 
+    {
+        width:10%;
+    }
+    #conteneur
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    #conteneur button
+    {
+        margin-top: 150px;
+        width: 200px;
+    }
 }
