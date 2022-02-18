@@ -78,8 +78,6 @@ button:hover
     text-align: initial;
     border: 1px whitesmoke none;
     border-radius: 20px 20px 0px 0px;
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: none;
     width: 98%;
     gap: 20px;
     position: relative;
@@ -97,7 +95,7 @@ a
     font-weight: bold;
     text-overflow: ellipsis;
 }
-.menu-details div 
+.menu-details > div > div 
 {
     background-color: white;
     display: flex;
