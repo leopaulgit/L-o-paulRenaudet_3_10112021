@@ -1,0 +1,334 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.logo img
+{
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    
+}
+
+#entré a, 
+#entré a:hover,
+#entré a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+#plats a,
+#plats a:hover,
+#plats a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+#desserts a,
+#desserts a:hover,
+#desserts a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+footer
+{
+    background-color:#4A4A4A;
+    text-decoration: white;
+    text-align: initial;
+}
+.legals a,
+.legals a:hover,
+.legals a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+.logo2 a img
+{
+   filter: invert(1);
+   height: 20px;
+   padding-left: 20px;
+   width: 100px;
+   padding-top: 30px;
+}
+button
+{
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 50px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border: none;
+    margin-left: 75px;
+    color: honeydew;
+}
+button:hover
+{
+    opacity: 0.8;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke ;
+    text-align: initial;
+    border: 1px whitesmoke none;
+    border-radius: 20px 20px 0px 0px;
+    width: 98%;
+    gap: 20px;
+    position: relative;
+    top: -20px;
+    
+    
+}
+
+a
+{
+    margin-left: 10px;
+}
+#conteneur div a p span
+{
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+.menu-details > div > div 
+{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    animation: slideup;
+    animation-duration: 3s;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    border-radius:20px;
+    overflow:hidden;
+    white-space: nowrap;
+    margin:10px;
+}
+
+
+#conteneur p 
+{
+    display:flex;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+
+    
+}
+.menu 
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.menu-details
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+
+}
+.menu-details>div 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-details div a 
+{
+   color:black;
+   text-decoration:none;
+   display:flex;
+   flex-direction:column;
+   width:100%;
+   padding:10px;
+   
+}
+i.fas.fa-check-circle
+{
+    align-self: center;
+}
+span.check{
+    justify-content:center;
+    width:0px;
+    display:flex;
+    background-color:rgb(132, 221, 184);
+    overflow:hidden;
+    transition:width 1s;
+    color:white;
+    
+    
+    
+  }
+  .menu-details>div div:hover span.check 
+  {
+    width:50px;
+    
+   
+    
+  }
+  .menu-details>div div:hover span.check i
+{
+  animation:rotate 1s forwards;
+  
+}
+.menu-details>div div:not(:hover) span.check i
+{
+  animation:rotate-b 1s forwards;
+}
+
+span.check i
+{
+  transform:rotate(180deg);
+}
+@keyframes rotate {
+  from {
+    transform:rotate(180deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+@keyframes rotate-b{
+  from {
+    transform:rotate(360deg);
+  }
+  to {
+    transform:rotate(180deg);
+  }
+}
+
+
+@keyframes slideup {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+ul 
+{
+    list-style-type: none;
+}
+.legal
+{
+    padding-bottom: 20px;
+}
+img 
+{
+    width: 100%;
+}
+#conteneur h2
+{
+    text-align: center;
+}
+h2
+{
+    font-family: 'Shrikhand';
+}
+h4 span
+{
+    text-decoration: underline rgb(99, 173, 99) 
+}
+i.fas.fa-utensils
+{
+    color: white;
+    margin-right: 18px;
+}
+i.fas.fa-hands-helping
+{
+    color: white;
+    margin-right: 10px;
+}
+i.far.fa-heart
+{
+    color: gray;
+    margin-left: 20px;
+    
+}
+i.fas.fa-chevron-left
+{
+    
+    color: rgb(41, 39, 39);
+    position: relative;
+    bottom: 10px;
+    right: 50px;
+}
+@media screen and (min-width: 820px)
+{
+    .logo a img 
+    {
+        width: 25%;
+    }
+    #conteneur button
+    {
+        margin: 0 auto;
+    }
+    img 
+    {
+        height: auto;
+    }
+}
+@media  screen and (min-width: 1080px)
+{
+    footer ul li 
+    {
+        margin: 15px;
+    }
+    body
+    {
+        margin: 0px;
+    }
+    footer ul 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+    img 
+    {
+        height: 600px;
+        object-fit: cover;
+    }
+    .logo a img 
+    {
+        width:10%;
+    }
+    #conteneur
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        position:initial;
+    }
+    #conteneur button
+    {
+        margin-top: 150px;
+        width: 200px;
+    }
+    .menu
+    {
+        flex-direction: row;
+    }
+}
