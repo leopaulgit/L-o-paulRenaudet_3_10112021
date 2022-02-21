@@ -11,6 +11,10 @@ body
     height: 30px;
     
 }
+#restaurants
+{
+    margin: 10px;
+}
 #restaurants .coeur
 {
     padding-top: 20px;
@@ -27,6 +31,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    margin-left: 10px;
 }
 #restaurants .restaurant
 {
@@ -34,7 +39,6 @@ body
  border-radius: 20px 20px 20px;
  margin-bottom: 20px;
  background-color: white;
- width: 98%;
  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
  position: relative;
 }
@@ -79,6 +83,7 @@ footer
     height: 40px;
     border-style: none;
     border-top-color: black;
+    margin-left: 30px;
 }
 .recherche 
 {
@@ -121,7 +126,7 @@ footer
 }
 .local i.fas.fa-map-marker-alt
 {
-    padding-left: 150px;
+    padding-left: 100px;
     padding-top: 10px;
 }
 .nav
@@ -153,7 +158,7 @@ ul
     border: white solid 1px;
     border-radius: 20px 20px 20px;
     padding: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     display: flex;
 
@@ -262,6 +267,7 @@ i.fas.fa-hamburger
 }
 @media  screen and (min-width: 1080px)
  {
+     
     footer ul li 
     {
         margin: 15px;
