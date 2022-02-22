@@ -56,6 +56,12 @@ footer
 }
 button
 {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: stretch;
     border-radius: 40px;
     width: 200px;
     height: 50px;
@@ -109,7 +115,7 @@ a
 }
 h3
 {
-    margin-top: 5px;
+    margin: 2px;
 }
 
 #conteneur p 
@@ -242,18 +248,19 @@ h2
 }
 h4 span
 {
-    text-decoration: underline rgb(99, 173, 99);
+    text-decoration: underline rgb(132, 221, 184);
     text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
 }
 i.fas.fa-utensils
 {
     color: white;
-    margin-right: 18px;
+    
 }
 i.fas.fa-hands-helping
 {
     color: white;
-    margin-right: 10px;
+    
 }
 i.far.fa-heart
 {
